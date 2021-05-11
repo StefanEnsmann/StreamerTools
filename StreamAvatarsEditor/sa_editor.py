@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""A batch editor for StreamAvatars written in Python."""
+"""A batch editor for Stream Avatars written in Python."""
 
 import argparse
 import json
@@ -19,7 +19,7 @@ __status__     = "Production"
 def parse_args():
     """Parses the console arguments and returns the ArgumentParser result."""
     StreamAvatarsFile = os.path.join(os.path.dirname(os.getenv("APPDATA")), "LocalLow", "ClonzeWork", "Streaming Avatars", "data", "streamavatars_json.txt")
-    desc = "A batch editor for StreamAvatars written in Python."
+    desc = "A batch editor for Stream Avatars written in Python."
     parser = argparse.ArgumentParser(prog="StreamAvatars Editor", description=desc)
     parser.add_argument("-s", "--status", action="store_true", help="Displays a count of all enabled and disabled avatars")
     parser.add_argument("-l", "--list", action="store_true", help="Displays a list of all avatars with their activation status")
