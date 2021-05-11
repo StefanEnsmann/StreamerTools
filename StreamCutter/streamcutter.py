@@ -1,7 +1,20 @@
+#!/usr/bin/env python
+"""A segmentation tool for video files written in Python and ffmpeg."""
+
 import argparse
-import subprocess
 import datetime
 import os
+import subprocess
+
+__author__     = "Stefan Ensmann"
+__copyright__  = "Copyright 2021, Stefan Ensmann"
+__credits__    = ["Stefan Ensmann"]
+
+__license__    = "AGPL-3.0"
+__version__    = "1.0.0"
+__maintainer__ = "Stefan Ensmann"
+__email__      = "stefan@ensmann.de"
+__status__     = "Production"
 
 def validTimestamp(s):
     splits = s.split(":")
