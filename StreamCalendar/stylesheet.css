@@ -1,0 +1,181 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1f1f23;
+    padding: 10px;
+    margin: 0px;
+    font-family: 'Palanquin', sans-serif;
+}
+
+.collapsible {
+    box-sizing: border-box;
+    background-color: #eeeeee;
+    color: #444444;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-bottom:5px;
+    font-family: 'Palanquin', sans-serif;
+}
+
+.collapsible:after {
+    content: "\25BC";
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\25B2"
+}
+
+.content {
+    overflow: hidden;
+    max-height: 0px;
+    padding-left: 10px;
+    padding-right: 5px;
+    transition: max-height 0.2s ease-out;
+    font-family: 'Palanquin', sans-serif;
+}
+
+.streamerlist {
+    background-color: #6600FF;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.streamer {
+    position: relative;
+    padding: 5px;
+    height: 60px;
+    margin-bottom: 5px;
+    border-radius: 30px;
+}
+
+.streamername {
+    position: relative;
+    left: 25px;
+    bottom: 10px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.profile {
+    position: relative;
+    top: 5px;
+    left: 8px;
+    border-radius: 24px;
+    height: 48px;
+}
+
+.year {
+    background-color: #6600FF;
+    color: #F0F0FF;
+    font-weight: bold;
+}
+
+.streamerlist:hover, .year:hover {
+    background-color: #B380FF;
+}
+
+.currentYear {
+    background-color: #9146FF;
+}
+
+.month {
+    background-color: #323239;
+    color: #F0F0FF;
+}
+
+.month:hover {
+    background-color: #545461;
+}
+
+.currentMonth {
+    background-color: #434350;
+}
+
+.event {
+    background-color: #330088;
+    color: #F0F0FF;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+.past {
+    background-color: #323239;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.description {
+    font-weight: 500;
+}
+
+.time {
+    font-weight: 200;
+    font-style: italic;
+}
+
+.location a {
+    color: #FFF;
+}
+
+.location a:hover {
+    color: #AAA;
+}
+
+.location a:visited {
+    color: #888;
+}
+
+.location::before {
+    content: "Hier: "
+}
+
+.scrollButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: 2px solid #000000;
+    outline: none;
+    background-color: #9146FF;
+    color: #F0F0FF;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    opacity: 0.0;
+    transition: opacity 0.2s ease-out;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-button {
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #330088;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1f1f23;
+}
