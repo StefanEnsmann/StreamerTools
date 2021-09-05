@@ -50,8 +50,8 @@ def parseArgs():
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", "-i", help="The input file to read from")
     parser.add_argument("--output", "-o", help="The file to write to")
-    parser.add_argument("--concat", "-n", type=validIndexlist, help="", metavar="s1[:s2[:s3[...]]]")
-    parser.add_argument("--clean", "-c", action="store_true")
+    parser.add_argument("--concat", "-n", type=validIndexlist, metavar="s1[:s2[:s3[...]]]", help="List of segment indices to concatenate")
+    parser.add_argument("--clean", "-c", action="store_true", help="Removes intermediate files")
     parser.add_argument("timestamp", nargs='*', type=validTimestamp, help="List of timestamps at which to split the video", metavar="[[HH:]MM:]SS")
     args = parser.parse_args()
 
